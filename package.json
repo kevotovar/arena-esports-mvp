@@ -1,0 +1,41 @@
+{
+  "name": "esports-arena",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.1.0",
+    "@material-ui/icons": "^3.0.1",
+    "@reach/router": "^1.1.1",
+    "emotion": "^9.2.10",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-emotion": "^9.2.10",
+    "react-scripts-ts": "2.17.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/node": "^10.9.4",
+    "@types/reach__router": "^1.0.1",
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.7",
+    "@types/reactstrap": "^6.0.3",
+    "husky": "^1.0.0-rc.14",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.14.3",
+    "typescript": "^3.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": ["prettier --write", "git add"]
+  }
+}
